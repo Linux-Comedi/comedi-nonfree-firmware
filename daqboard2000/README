@@ -1,0 +1,5 @@
+The daqboard2000_firmware.bin file should be uploaded to your 
+IOTech DAQBoard/2000 using the -i or --init-data option of
+comedi_config.
+
+

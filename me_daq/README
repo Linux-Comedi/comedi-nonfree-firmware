@@ -1,0 +1,3 @@
+The me2600_firmware.bin file should be uploaded to your 
+Meilhaus ME-2600 family board using the -i or --init-data option of
+comedi_config.  

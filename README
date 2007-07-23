@@ -1,0 +1,6 @@
+The comedi_nonfree_firmware tarball contains firmware for boards which
+cannot be included in the main comedi package due to licensing or
+copyright issues.  The firmware can generally be uploaded to boards
+by using comedi_config with the -i or --init-data option.  See the
+README in the subdirectory corresponding to your board's driver for
+more information.

@@ -1,0 +1,6 @@
+The me4000_firmware.bin file should be uploaded to your 
+Meilhaus ME-4000 family board using the -i or --init-data option of
+comedi_config.  However, at the time of this writing (2005-03-18)
+the driver support for firmware upload is broken.
+
+

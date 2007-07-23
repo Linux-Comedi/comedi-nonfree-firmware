@@ -1,0 +1,28 @@
+This directory contains firmware for the National Instruments pci-6534
+board.  The firmware files can be loaded when comedi_config is run
+by using the --init-data0, --init-data1, and --init-data2 
+options.  The path to the ni6534a.bin file should be 
+passed as the argument of the --init-data0 option.
+The niscrb01.bin file path is passed to --init-data1, and the
+niscrb02.bin file path is passed to --init-data2.  
+All three firmware files should be passed
+to a single execution of comedi_config.  The niscrb03.bin file is not used.
+You will need to use comedi_config from comedilib version 0.7.23
+or later, and the ni_pcidio driver from comedi version 0.7.70 or later for
+this to have any chance or working.  The firmware needs to be loaded
+into the board after every power-up.  To the best of my knowledge, these
+firmware files are all copyright National Instruments, and no one involved
+with Comedi has any access to their source code.
+
+File descriptions:
+
+ni6534a.bin: Firmware for the main FPGA
+
+niscrb01.bin: Firmware to program a "scarab" for digital input mode,
+  loaded into "scarab A" by the driver.
+
+niscrb02.bin: Firmware to program a "scarab" for digital output mode,
+  loaded into "scarab B" by the driver.
+
+niscrb03.bin: Firmware to program a "scarab" for "mem detect" mode,
+  unused.
