@@ -1,0 +1,6 @@
+The jr3pci.idm file in this directory contains firmware for the jr3_pci 
+driver.  Note, this driver does not load its firmware through comedi_config,
+but rather relies on the generic support in the Linux kernel for firmware 
+upload.  The jr3pci.idm file should be installed into the directory
+/lib/firmware/comedi/ 
+
